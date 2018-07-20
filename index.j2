@@ -1,0 +1,15 @@
+{{ variable_to_be_replaced }}
+
+{% for i in range(3)%}
+  This is the {{ i }}th variable
+{% endfor %}
+
+
+
+  {% if result == "DOWN" %}
+	your server is down
+  {% elif result == "ERROR" %}
+	your server is has problem
+  {% elif result == "DONE" %}
+	your server is done 
+  {% endif %}

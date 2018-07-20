@@ -1,0 +1,9 @@
+- hosts: localhost
+  vars:
+    variable_to_be_replaced: 'Hello world'
+    result: 'DONE'
+  tasks:
+    - name: Ansible Template Example
+      template:
+        src: index.j2
+        dest: /Users/fsadykov/jinja/templates/index.html 
