@@ -6,4 +6,6 @@
     - name: Ansible Template Example
       template:
         src: index.j2
-        dest: /Users/fsadykov/jinja/templates/index.html 
+        dest: /Users/fsadykov/jinja/templates/index.sh   
+    - name: Executing command for check the results
+      command: sh templates/index.sh   

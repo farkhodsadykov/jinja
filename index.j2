@@ -1,15 +1,16 @@
-{{ variable_to_be_replaced }}
+#!/bin/bash
+echo "{{ variable_to_be_replaced }}"
 
 {% for i in range(3)%}
-  This is the {{ i }}th variable
+  echo "This is the {{ i }}th variable"
 {% endfor %}
 
 
 
   {% if result == "DOWN" %}
-	your server is down
+	echo "your server is down"
   {% elif result == "ERROR" %}
-	your server is has problem
+	echo "your server is has problem"
   {% elif result == "DONE" %}
-	your server is done 
+	echo "your server is done "
   {% endif %}
